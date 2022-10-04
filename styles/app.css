@@ -8,6 +8,18 @@ body {
     line-height: 2; /*Interlineado recomendado*/
     font-family: 'Poppins', sans-serif;
 }
+.checkbtn {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
 /*-------UTILIDADES-------*/
 .centrartexto {
     text-align: center
@@ -17,6 +29,9 @@ body {
 }
 .colorverde {
     color: #197F5B;
+}
+.rezise {
+    font-size: 50px;
 }
 /* -------NAVEGACION -------*/
 .navegacion {
@@ -59,6 +74,13 @@ body {
     background-color: #197F5B;
     margin-bottom: 80px;
 }
+.parteprincipal h1 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+.parteprincipal span {
+    color: #EF9919;
+}
 .parteprincipal-contenedor {
     width: 70vw;
     margin: 0 auto;
@@ -66,15 +88,16 @@ body {
 }
 .parteprincipal p {
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
 }
 .parteprincipal p span {
     color: #EF9919;
 }
 .parteprincipal h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: hsl(0, 0%, 100%);
+    font-weight: 400;
 }
 .Fotobackground-contenedor {
     position: relative;
@@ -85,6 +108,7 @@ body {
     position: absolute;
     border-radius: 30px;
     background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
 }
 .smallboxbackground1 {
     left: 14vw;
@@ -167,7 +191,7 @@ body {
     font-weight: 800;
 }
 .barwithtext {
-    height: 325px;
+    height: 50vh;
 }
 .bargreen {
     width: 7px;
@@ -340,3 +364,187 @@ body {
     padding: 50px;
 }
 /*-------RESPONSIVIDAD------*/
+@media only screen and (max-width: 1076px) and (min-width: 768px) {
+    .navegacion {
+        padding: 0;
+    }
+    .navegacion ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navegacion ul li {
+        margin: 0;
+        width: auto;
+        
+    }
+    .navegacion ul li a {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .suscripcion-container {
+        width: 100vw;
+    }
+    .dataregister button  {
+        width: 180px;
+    }
+    .barwithtext {
+        height: auto;
+    }
+    .academy-flex {
+        display: block;
+        
+    }
+    .bargreen {
+        display: none;
+    }
+    .Experiencia-contenedor {
+        width: 100%;
+    }
+    .Experiencia-contenedor__academy {
+        width: auto;
+        margin: 40px auto;
+    }
+    .estudios-contenedor__academia {
+        height: auto;
+    }
+    .estudios-contenedor__academia p {
+        font-size: 16px;
+    }
+    .portafolio-contenedor__imagenes img {
+        display: block;
+        margin: 20px auto;
+    }
+    .contacto-contenedor__box p{
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .parteprincipal-contenedor {
+        width: 100%;
+    }
+    .parteprincipal p {
+        font-size: 16px;
+    }
+    .Fotobackground-contenedor img {
+        height: 20vh;
+    }
+    .parteprincipal h2 {
+        font-size: 30px;
+    }
+    .suscripcion-container {
+        width: 100vw;
+    }
+    .dataregister button  {
+        width: 180px;
+    }
+    .barwithtext {
+        height: auto;
+    }
+    .academy-flex {
+        display: block;
+        
+    }
+    .bargreen {
+        display: none;
+    }
+    .Experiencia-contenedor {
+        width: 100%;
+    }
+    .Experiencia-contenedor__academy {
+        width: auto;
+        margin: 40px auto;
+    }
+    .estudios-contenedor__academia {
+        height: auto;
+    }
+    .estudios-contenedor__academia p {
+        font-size: 16px;
+    }
+    .portafolio-contenedor__imagenes img {
+        display: block;
+        margin: 20px auto;
+    }
+    .contacto-contenedor__box p{
+        font-size: 16px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 80px;
+        left: -100vw;
+        text-align: center;
+        background-color: #098056;
+        transition: all .5s;
+        z-index: 100;
+    }
+    .navegacion ul li {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+        line-height: 10px;
+    }
+    .navegacion ul li a {
+        font-size: 20px;
+    }
+    .navegacion ul li a.active, .navegacion ul li a:hover {
+        background-color: none;
+        color: black;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .suscripcion-container {
+        padding: 20px 10px;
+        height: auto;
+    }
+    .suscripcion-container h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .aboutme-container h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .aboutme-container p {
+        font-size: 16px;
+        text-align: justify;
+    }
+    .botondescarga {
+        width: auto;
+        height: 80px;
+        line-height: 80px;
+    }
+    .estudios-contenedor h2,
+    .abilities-container h2,
+    .Experiencia-contenedor h2,
+    .portafolio-contenedor h2,
+    .contacto-contenedor h2,
+    .footer h2 {
+        font-size: 30px;
+    }
+    .estudios-contenedor {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .icon-background {
+        width: 100px;
+        height: 100px;
+    }
+    .icon-background img {
+        width: 40px;
+        height: 40px;
+    }
+    .footer p {
+        font-size: 16px;
+    }
+
+}
