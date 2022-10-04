@@ -1,0 +1,342 @@
+img {
+    max-width: 100%;
+    display: block;
+} /* Usa todo el tamaño maximo que permite box sizing o grid para su bloque y le da display block para poder ser editables por bloques*/
+
+body {
+    font-size: 1.6rem; /*Letras de tamaño por defecto 16 pixeles*/
+    line-height: 2; /*Interlineado recomendado*/
+    font-family: 'Poppins', sans-serif;
+}
+/*-------UTILIDADES-------*/
+.centrartexto {
+    text-align: center
+}
+.coloramarillo {
+    color: #EF9919;
+}
+.colorverde {
+    color: #197F5B;
+}
+/* -------NAVEGACION -------*/
+.navegacion {
+    height: 80px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: #197F5B;
+}
+.navegacion ul {
+    float: right;
+    margin-right: 20px;
+    
+}
+.navegacion ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+    list-style: none;
+}
+.navegacion ul li a {
+    text-decoration: none;
+    line-height: 100px;
+    color: white;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    transition: all .2s ease-in-out;
+}
+.navegacion ul li a span {
+    color: #EF9919;
+}
+.navegacion ul li a:hover {
+    background-color: hsla(145, 99%, 36%, 0.829);
+    color: hsl(0, 0%, 0%);
+}
+
+/*-------PARTE PRINCIPAL-------*/
+.parteprincipal {
+    background-color: #197F5B;
+    margin-bottom: 80px;
+}
+.parteprincipal-contenedor {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.parteprincipal p {
+    text-align: center;
+    font-size: 80px;
+}
+.parteprincipal p span {
+    color: #EF9919;
+}
+.parteprincipal h2 {
+    text-align: center;
+    font-size: 50px;
+    color: hsl(0, 0%, 100%);
+}
+.Fotobackground-contenedor {
+    position: relative;
+}
+.smallboxbackground1, .smallboxbackground2 {
+    width: 160px;
+    height: auto;
+    position: absolute;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 100%);
+}
+.smallboxbackground1 {
+    left: 14vw;
+    top: 10px;
+}
+.smallboxbackground2{
+    right: 14vw;
+    bottom: 10px;
+}
+.Fotobackground-contenedor img {
+    margin: 0 auto;
+    height: 80vh;
+    position: static;
+}
+.smallboxbackground1 p, .smallboxbackground2 p {
+    font-size: 16px;
+}
+/*-------ICONOS SOCIALES-------*/
+.socialicons {
+    height: 80px;
+    width: 450px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.socialicons div {
+    background-color: white;
+    border-radius: 50%;
+    cursor: º;
+}
+.socialicons div img {
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    margin: 12px;
+}
+/*-------SUSCRIPCION-------*/
+.suscripcion-container {
+    margin: 60px auto;
+    height: 30vh;
+    width: 70vw;
+    background-color: #F9F5F2;
+    padding: 20px 60px;
+}
+.suscripcion-container h3 {
+    text-align: center;
+    color: hsl(0, 0%, 64%);
+    margin: 20px;
+}
+
+.dataregister input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.dataregister {
+    width: 100%;
+    position: relative;
+}
+.dataregister button {
+    height: 90%;
+    width: 250px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 1%;
+    background-color: #197F5B;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}   
+/*-------ACERCA DE MI-------*/
+.aboutme-container {
+    margin: 0 auto;
+    width: 80vw;
+}
+.aboutme-container h2 {
+    font-size: 80px;
+    font-weight: 800;
+}
+.barwithtext {
+    height: 325px;
+}
+.bargreen {
+    width: 7px;
+    height: 100%;
+    background-color: #197F5B;
+    float: left;
+    margin-right: 40px;
+}
+.aboutme-container p {
+    line-height: 1.7;
+}
+.botondescarga {
+    margin: 20px auto;
+    color: hsl(0, 0%, 100%);
+    background-color: #197F5B;
+    width: 350px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
+}
+/*-------ESTUDIOS-------*/
+.estudios-contenedor {
+    width: 60vw;
+    margin: 0 auto;
+}
+.contenedor__academia {
+    display: flex;
+    justify-content: space-between;
+}
+.estudios-contenedor h2 {
+    font-size: 80px;
+    font-weight: 800px;
+    text-align: center;
+    margin: 50px 0;
+}
+.estudios-contenedor__academia h3,
+.estudios-contenedor__academia p {
+    text-align: center;
+    margin-bottom: 14px;
+}
+.estudios-contenedor__academia {
+    flex-basis: calc(50% - 1rem);
+    background-color:#F9F5F2;
+    height: 440px;
+    padding: 30px;
+    line-height: 1.6;
+}
+.estudios-contenedor__academia img {
+    width: 100px;
+    margin: 0 auto;
+}
+/*-------MIS HABILIDADES------*/
+.abilities-container {
+    width: 70vw;
+    margin: 0 auto;
+}
+.abilities-container h2 {
+    font-size: 80px;
+    text-align: center;
+    margin: 50px 0;
+}
+.progress {
+    margin-bottom: 30px;
+}
+.progress-bar {
+    background-color: #197F5B;
+    color: #197F5B;
+    height: 30px;
+    font-size: 0;
+    border-radius: 30px;
+}
+.textjustified {
+    display: flex;
+    justify-content: space-between;
+}
+.background-bar {
+    background-color: hsl(0, 0%, 90%);
+    height: 30px;
+    width: 100%;
+    border-radius: 30px;
+}
+/*-------EXPERIENCIA-------*/
+.Experiencia-contenedor__background {
+    background-color: #F9F5F2;
+    padding: 30px 0;
+}
+.Experiencia-contenedor {
+    width: 70vw;
+    margin: 80px auto;
+}
+.Experiencia-contenedor h2 {
+    font-size: 80px;
+    margin: 50px 0;
+    text-align: center;
+}
+.academy-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.Experiencia-contenedor__academy img {
+    height: 70px;
+    margin: 0 auto;
+}
+.Experiencia-contenedor__academy {
+    width: calc(20% - 1rem);
+}
+/*-------MI PORTAFOLIO-------*/
+.portafolio-contenedor {
+    width: 80vw;
+    margin: 30px auto;
+}
+.portafolio-contenedor h2 {
+    font-size: 80px;
+    text-align: center;
+    margin: 30px 0;
+}
+.portafolio-contenedor__imagenes img {
+    height: 400px;
+    display: inline-block;
+    margin: 10px;
+    object-fit: cover;
+}
+/*-------CONTACTO------*/
+.contacto-contenedor {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+.contacto-contenedor h2{
+    font-size: 80px;
+    text-align: center;
+    margin: 50px 0;
+}
+.contacto-contenedor__boxes {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+}
+.contacto-contenedor__box {
+    height: 280px;
+}
+.contacto-contenedor__box:nth-child(2) {
+    margin-top: 50px;
+}
+.icon-background {
+    background-color: #F9F5F2;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.icon-background img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.contacto-contenedor__box p {
+    text-align: center;
+}
+/*-------FOOTER-------*/
+.footer {
+    margin-top: 100px;
+    background-color: #197F5B;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 50px;
+}
+/*-------RESPONSIVIDAD------*/
